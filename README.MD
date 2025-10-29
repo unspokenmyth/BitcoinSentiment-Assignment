@@ -1,6 +1,6 @@
 # 📊 Market Sentiment and Trader Performance Analysis
 
-**Author:** Nishant Bagga  
+**Author: Nishant Bagga**  
 
 ## **Objective**
 This project explores how **market sentiment** — fear, greed, and everything in between — influences **trading behavior and profitability**.  
