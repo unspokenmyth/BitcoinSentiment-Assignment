@@ -43,27 +43,6 @@ Analyzes average phase duration, probability of sentiment transitions, and how r
 
 ---
 
-## 📊 Visual Insights  
-
-A series of interactive visualizations illustrate how sentiment dynamics, trader actions, and returns evolve over time.  
-Each plot aims to answer a distinct strategic question.  
-
-| ![Sentiment Timeline](./images/plot1.png) | ![Price vs Sentiment](./images/plot2.png) | ![Greed Index](./images/plot3.png) |
-|:--:|:--:|:--:|
-| **Fear & Greed Evolution** — tracks emotional shifts and their duration. | **Price & Sentiment Overlay** — compares BTC price with changing sentiment intensity. | **Greed Frequency Distribution** — visualizes how often extreme greed occurs across cycles. |
-
-| ![Trader Profiles](./images/plot4.png) | ![Returns by Sentiment](./images/plot5.png) | ![Cluster Map](./images/plot6.png) |
-|:--:|:--:|:--:|
-| **Top Traders Overview** — contrasts consistent performers vs. reactive traders. | **PNL Distribution by Sentiment Zone** — shows which emotional states yield better risk-adjusted returns. | **Trader Clustering (K-Means)** — identifies behavioral archetypes. |
-
-| ![Regime Detection](./images/plot7.png) | ![Signal Backtest](./images/plot8.png) | ![Risk Allocation](./images/plot9.png) |
-|:--:|:--:|:--:|
-| **Market Regime Map** — visualizes transitions between Fear and Greed states. | **Strategy Backtest Summary** — compares sentiment-based signals with buy-and-hold returns. | **Dynamic Risk Model** — adaptive exposure and drawdown mapping by sentiment phase. |
-
-*(Add or replace with your new plots before pushing.)*
-
----
-
 ## ⚙️ Tech Stack  
 
 **Languages & Libraries:** Python, Pandas, NumPy, Seaborn, Plotly  
