@@ -1,73 +1,82 @@
-# 📊 Market Sentiment and Trader Performance Analysis
+# 🪙 Bitcoin Sentiment & Market Behavior Analysis  
 
-**Author:** Nishant Bagga  
+### Developed by [Nishant Bagga](https://github.com/unspokenmyth)
 
-## **Objective**
-This project explores how **market sentiment** — fear, greed, and everything in between — influences **trading behavior and profitability**.  
-By analyzing performance trends across emotional phases, we uncover how traders react under pressure and when opportunity strikes.
-
----
-
-## **Dataset Overview**
-The dataset includes:
-- **Trade Details:** Buy/Sell activity, price, and size  
-- **Profit & Loss (PnL):** Realized gains per trader  
-- **Market Sentiment:** Ranging from *Extreme Fear* to *Extreme Greed*  
-- **Account IDs:** Anonymized trader identifiers (truncated to 10–12 chars)  
-- **Date & Index Data:** Tracking sentiment shifts over time  
+A data-driven exploration of how **fear and greed** shape Bitcoin market movements and trader behavior.  
+This project combines market sentiment data, trader activity, and price patterns to extract **real trading insights** — not just correlations.  
 
 ---
 
-## **Analysis Overview**
-1. Sentiment distribution and activity frequency  
-2. Trade volume and profit patterns across emotions  
-3. Time-based shifts in the Fear-Greed index  
-4. Ranking of traders by consistent profitability  
-5. Correlation insights between trading metrics  
+## 📘 Overview  
+
+The analysis uses historical sentiment and trader data to study how emotional extremes influence Bitcoin’s volatility, return patterns, and overall market health.  
+Now enhanced with a **strategy-ready layer**, it provides insights into *what traders can do* based on evolving sentiment trends.  
 
 ---
 
-## **Key Visual Insights**
+## 🔍 Key Analytical Components  
 
-### **1. Market Sentiment Distribution**
-- Fear dominates overall market behavior, followed closely by Greed.  
-- Suggests a cautious trading environment with short bursts of optimism.  
+### 1️⃣ Entry & Exit Signal Generation  
+Identifies actionable trade zones based on shifts between sentiment states.  
+Example: entering long positions when sentiment recovers from *Extreme Fear* or reducing exposure in *Extreme Greed*.  
+Future updates include comparing signal-based returns vs. simple buy-and-hold performance to assess real edge.
 
-### **2. Trade Frequency by Sentiment**
-- Activity spikes during **Fear** and **Greed** phases — traders are most active when emotions are strongest.  
+### 2️⃣ Trader Segmentation & Behavior Patterns  
+Beyond simple leaderboards, traders are clustered into behavioral groups —  
+• Contrarian traders: buy during Fear, exit during Greed  
+• Momentum traders: follow crowd behavior, often late to trends  
+• Consistent top traders: disciplined and low-volatility profiles  
+Helps identify what truly differentiates profitable trader types.
 
-### **3. Average PnL by Sentiment**
-- **Extreme Greed** yields the highest average profit.  
-- **Extreme Fear** often correlates with losses or reduced exposure.  
+### 3️⃣ Predictive Power Assessment  
+Measures whether today’s sentiment can predict next-day or next-week returns.  
+Includes feature importance comparison between sentiment level, sentiment change, and market volatility.  
+Planned addition: lead-lag correlation and out-of-sample testing for 2018–2024 data.
 
-### **4. Fear-Greed Index Over Time**
-- Sentiment follows a **cyclical pattern**, shifting with volatility.  
-- Traders who adapt to these transitions tend to outperform.  
+### 4️⃣ Risk Management Framework  
+Introduces dynamic position sizing — allocating more risk when Fear dominates, scaling down during Greed.  
+Each sentiment zone corresponds to distinct risk and stop-loss guidance, forming a balanced approach between aggression and protection.
 
-### **5. Volume vs. Sentiment**
-- High trade volumes appear during emotional extremes — fear-driven selloffs or greed-fueled rallies.  
-
-### **6. PnL Distribution (Buy vs. Sell)**
-- **BUY** trades perform better during Fear; **SELL** trades dominate during Extreme Greed.  
-
-### **7. Top 10 Traders**
-- Consistent profits across conditions — not sentiment-driven but **data-disciplined**.  
-
-### **8. Feature Correlation Matrix**
-- Minimal correlation among numeric trade features.  
-- Reinforces that **behavioral patterns**, not just size or price, drive outcomes.  
-
-### **9. Trader Profitability Over Time**
-- Subtle upward trend among experienced traders.  
-- Suggests adaptation and learning curves in market behavior.  
+### 5️⃣ Market Regime Detection  
+Detects structural shifts between accumulation (Fear-driven) and distribution (Greed-driven) regimes.  
+Analyzes average phase duration, probability of sentiment transitions, and how regimes influence performance consistency.
 
 ---
 
-## **Key Takeaways 💡**
-- Emotions **drive participation**, especially at extremes.  
-- **Profit peaks during Greed**, but smart traders exploit Fear cycles.  
-- **Consistency beats emotion** — disciplined strategies outperform mood-based reactions.  
-- Market sentiment is a **useful signal**, not a trading instruction.
+## 📊 Visual Insights  
+
+A series of interactive visualizations illustrate how sentiment dynamics, trader actions, and returns evolve over time.  
+Each plot aims to answer a distinct strategic question.  
+
+| ![Sentiment Timeline](./images/plot1.png) | ![Price vs Sentiment](./images/plot2.png) | ![Greed Index](./images/plot3.png) |
+|:--:|:--:|:--:|
+| **Fear & Greed Evolution** — tracks emotional shifts and their duration. | **Price & Sentiment Overlay** — compares BTC price with changing sentiment intensity. | **Greed Frequency Distribution** — visualizes how often extreme greed occurs across cycles. |
+
+| ![Trader Profiles](./images/plot4.png) | ![Returns by Sentiment](./images/plot5.png) | ![Cluster Map](./images/plot6.png) |
+|:--:|:--:|:--:|
+| **Top Traders Overview** — contrasts consistent performers vs. reactive traders. | **PNL Distribution by Sentiment Zone** — shows which emotional states yield better risk-adjusted returns. | **Trader Clustering (K-Means)** — identifies behavioral archetypes. |
+
+| ![Regime Detection](./images/plot7.png) | ![Signal Backtest](./images/plot8.png) | ![Risk Allocation](./images/plot9.png) |
+|:--:|:--:|:--:|
+| **Market Regime Map** — visualizes transitions between Fear and Greed states. | **Strategy Backtest Summary** — compares sentiment-based signals with buy-and-hold returns. | **Dynamic Risk Model** — adaptive exposure and drawdown mapping by sentiment phase. |
+
+*(Add or replace with your new plots before pushing.)*
+
+---
+
+## ⚙️ Tech Stack  
+
+**Languages & Libraries:** Python, Pandas, NumPy, Seaborn, Plotly  
+**Machine Learning:** Scikit-learn (K-Means, Hidden Markov Models)  
+**Data Source:** Sentiment indices, price history, and trader analytics  
+
+---
+
+## 🧩 Next Steps  
+
+- Complete sentiment-based strategy backtesting and Sharpe ratio evaluation  
+- Add feature importance charts to assess predictive strength  
+- Integrate interactive dashboards for live trader profiling  
 
 ---
 
@@ -101,5 +110,10 @@ Understanding when the market is fearful or greedy helps traders stay objective,
     <td align="center"><img src="results/figures/top_traders.png" width="320"><br><b>Top 10 Traders</b></td>
     <td align="center"><img src="results/figures/feature_correlation_matrix.png" width="320"><br><b>Feature Correlation Matrix</b></td>
     <td align="center"><img src="results/figures/trader_profitability_over_time.png" width="320"><br><b>Trader Profitability Over Time</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="results/figures/trade_playbook.png" width="320"><br><b>Trade Playbook</b></td>
+    <td align="center"><img src="results/figures/7day_rolling_pnl.png" width="320"><br><b>7-Day Rolling PnL</b></td>
+    <td align="center"><img src="results/figures/strategy_cumulative_pnl.png" width="320"><br><b>Strategy Cumulative PnL</b></td>
   </tr>
 </table>
